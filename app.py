@@ -10,7 +10,7 @@ app.config['SECRET_KEY'] = os.getenv('FLASK_SECRET_KEY', 'default-secret-key')
 
 # CONNECT TO MySQL DB
 username = os.getenv('MYSQL_USERNAME', 'root')
-password = os.getenv('MYSQL_PASSWORD', 'gshy2002')
+password = os.getenv('MYSQL_PASSWORD', 'your-own-password')
 host = os.getenv('MYSQL_HOST', 'localhost')
 dbname = os.getenv('MYSQL_DBNAME', 'test')
 app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql+pymysql://{username}:{password}@{host}/{dbname}'
