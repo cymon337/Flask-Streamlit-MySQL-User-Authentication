@@ -7,7 +7,7 @@ in the terminal:
 ```
 mysql -u root -p
 ```
-- type in password
+- type in password, remember to change that in app.py, I name my database "test" by the way.
 - handy commands to locate your database and its content
 ```
 SHOW DATABASES;
