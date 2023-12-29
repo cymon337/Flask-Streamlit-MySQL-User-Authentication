@@ -9,10 +9,10 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv('FLASK_SECRET_KEY', 'default-secret-key')
 
 # CONNECT TO MySQL DB
-username = os.getenv('MYSQL_USERNAME', 'root')
-password = os.getenv('MYSQL_PASSWORD', 'your-own-password')
-host = os.getenv('MYSQL_HOST', 'localhost')
-dbname = os.getenv('MYSQL_DBNAME', 'test')
+username = os.getenv('MYSQL_USERNAME', 'flask')
+password = os.getenv('MYSQL_PASSWORD', 'flask')
+host = os.getenv('MYSQL_HOST', '192.168.111.100')
+dbname = os.getenv('MYSQL_DBNAME', 'FLASK')
 app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql+pymysql://{username}:{password}@{host}/{dbname}'
 
 db = SQLAlchemy(app)
